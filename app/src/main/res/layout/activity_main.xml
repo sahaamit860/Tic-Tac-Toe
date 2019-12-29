@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#3b3b3b"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F81663"
+            android:padding="10dp"
+            android:text="X : 0 "
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/textcross"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0BB2B8"
+            android:padding="10dp"
+            android:text="O : 0 "
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:id="@+id/textzero"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/reset_img"
+            android:onClick="playAgain"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gameBoard"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:background="#fff">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="1dp"
+                android:src="@drawable/white"
+                android:tag="0"
+                android:onClick="imgtap"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="1dp"
+                android:src="@drawable/white"
+                android:tag="1"
+                android:onClick="imgtap"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="1dp"
+                android:src="@drawable/white"
+                android:tag="2"
+                android:onClick="imgtap"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="1dp"
+                android:src="@drawable/white"
+                android:tag="3"
+                android:onClick="imgtap"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="1dp"
+                android:src="@drawable/white"
+                android:tag="4"
+                android:onClick="imgtap"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="1dp"
+                android:src="@drawable/white"
+                android:tag="5"
+                android:onClick="imgtap"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="1dp"
+                android:src="@drawable/white"
+                android:tag="6"
+                android:onClick="imgtap"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="1dp"
+                android:src="@drawable/white"
+                android:tag="7"
+                android:onClick="imgtap"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="1dp"
+                android:src="@drawable/white"
+                android:tag="8"
+                android:onClick="imgtap"/>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:textColor="#FFEB3B"
+        android:textSize="70dp"
+        android:fontFamily="cursive"
+        android:layout_gravity="center"/>
+
+</GridLayout>
